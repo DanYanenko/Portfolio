@@ -197,10 +197,6 @@ li[class*="navigation-item"] a{
 	margin-top: -36.5px;
 	text-decoration: none;
 	display: block;
-	//width: 100%;
-	/*width: 230px;   //to make a shorter border
-	margin-left:10px;//to make a shorter border*/
-
     padding-left: 18px;
     margin-left: 10px;
     width: 230px;
@@ -247,13 +243,15 @@ li[class*="navigation-item"] a{
 	border-radius: 4px 4px 0 0;
 }
 
-#lowest-item{
 
-	border-bottom:none;
+
+#lowest-item{
 	border-radius:0 0 4px 4px;
 }
 
-
+#lowest-item a{
+	border-bottom:none;
+}
 
 
 	
