@@ -32,7 +32,8 @@
 	<!-- modernizer -->
 	<script src="bower/modernizer/modernizr.js"></script>
 
-	
+	<!-- jQuery -->
+
 	
 </head>
 <body>
@@ -45,7 +46,7 @@
 				--><li class="social-item"><a href="http://www.facebook.com/daniil.yanenko" target="blank" class="social-item-linkFB"></a></li><!--
 				--><li class="social-item"><a href="http://github.com/danyanenko" target="blank" class="social-item-linkGH"></a></li>				
 			</ul>
-		<div class="grad-header"></div>	
+			<div class="grad-header"></div>	
 		</header>
 				
 	<div class="wrapper">		
@@ -70,8 +71,40 @@
 				</address>	
 			</aside>
 		</div>
-
+			
 		<div class="variable-content">
+			<div class="add-proj-block" id="add-proj">
+				<div class="add-proj-header">Добавление проекта<div class="close-button"></div></div>
+				<form action="" class="add-proj-form">
+						<div class="form-name">
+							<span class="label">Название проекта</span>
+							<input type="proj-name" class="input-form-proj-name" placeholder="Введите название"/>
+						</div>
+						
+						<div class="form-add-button">
+							<span class="label">Картинка проекта</span>
+							<label class="label-add-button">
+								<div class="filename">Загрузите изображение</div>
+								<input type="file" value="Загрузите изображение" class="add-button">
+							</label>
+						</div>
+						<div class="form-url">
+							<span class="label">URL проекта</span>
+							<input type="url" class="input-form-url" placeholder="Добавьте ссылку"/>
+						</div>
+
+						<div class="descr">
+							<span class="label">Описание проекта</span>
+							<textarea class="input-proj-descr"  placeholder="Пара слов о Вашем проекте"></textarea>
+						</div>
+						
+						
+						<div class="submit-button">
+							<input type="submit" class="input-submit-button" value="Добавить">
+						</div>
+				</form>	
+			</div>		
+		
 			<div class="projects">
 
 				<h2 class="projects-header">Мои проекты</h2>
@@ -104,7 +137,8 @@
 								<h3 class="proj-header">Название проекта</h3>
 								<p class="proj-descr">Краткая информация о проекте</p>
 							</div>
-						</li><li class="project-item">
+						</li>
+						<li class="project-item">
 							<div class="project-item-detail">
 								<div class="hidden_backgr"><div class="popup-link"><a href="#" class="project-link">site.com</a></div></div>
 								<img src="img/proj-img4.png" height="100" width="150" class="proj-img" alt="site.com"/>
@@ -112,7 +146,8 @@
 								<h3 class="proj-header">Название проекта</h3>
 								<p class="proj-descr">Краткая информация о проекте</p>
 							</div>
-						</li><li class="project-item">
+						</li>
+						<li class="project-item">
 							<div class="project-item-detail">
 								<div class="hidden_backgr"><div class="popup-link"><a href="#" class="project-link">site.com</a></div></div>
 								<img src="img/proj-img5.png" height="100" width="150" class="proj-img" alt="site.com"/>
@@ -122,12 +157,17 @@
 							</div>
 						</li>
 						<li class="project-item">
-							<div class="add-project-button">
-								<label class="label-input">
-									<img src="second_site.com" class="proj-img" alt="site.com"/>
-									<input type="file" class="input-button">
-								</label>	
-							</div>
+							<label class="popup-label">
+								<div class="add-project-button">
+								
+									
+									<input type="button" class="popup-button" id="popup-button" value="Pop it up!"/>
+								</div>
+								<h3 class="upload-proj-header">Загрузить новый проект</h3>
+							</label>
+								
+							
+								
 						</li>
 					</ul>
 				</div>	
@@ -142,6 +182,9 @@
 					<div class="text-footer">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>	
 	</footer>	
 		
-		
+	<script src="bower/jquery/dist/jquery.min.js"></script>
+	<script src="js/text_file_input.js"></script>	
+	<script type="text/javascript" src="bower_components/bPopup/jquery.bpopup.js"></script>
+	<script type="text/javascript" src="js/pop_up.js"></script>
 </body>
 </html>
