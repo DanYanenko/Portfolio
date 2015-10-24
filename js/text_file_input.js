@@ -1,5 +1,5 @@
 $(document).ready(function() {
-    console.log('text_file_input.js in window!')
+
 
 
 $('.add-button').on('change', function() {

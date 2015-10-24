@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru=RU">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="loftschool_homework">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Мои работы</title>
 
 	<!--  SEO -->
@@ -24,29 +25,30 @@
 	<!--     CSS   -->
 
 	<link rel="stylesheet" type="text/css" href="css/my-projects.css">
+	<link rel="stylesheet" type="text/css" href="css/social.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/wrapper.css">
+	<link rel="stylesheet" type="text/css" href="css/fixed-content.css">
 	
 	<!--  bower CSS -->
-
-	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/qTip2/jquery.qtip.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
 		
 	<!-- modernizer -->
-	<script src="bower/modernizer/modernizr.js"></script>
-
-	<!-- jQuery -->
-
-	
+	<script src="bower_components/modernizer/modernizr.js"></script>
 </head>
 <body>
 <div class="super-wrapper">
 		<header class="header">
-			<div class="logo"></div>
-			<ul class="social">
-				<li class="social-item"><a href="http://vk.com/daniilyanenko" target="blank" class="social-item-linkVK"></a></li><!--
-				--><li class="social-item"><a href="http://twitter.com" target="blank" class="social-item-linkTW"></a></li><!--
-				--><li class="social-item"><a href="http://www.facebook.com/daniil.yanenko" target="blank" class="social-item-linkFB"></a></li><!--
-				--><li class="social-item"><a href="http://github.com/danyanenko" target="blank" class="social-item-linkGH"></a></li>				
-			</ul>
-			<div class="grad-header"></div>	
+			<div class="header-content">
+				<div class="logo"><img src="img/logo.png"  alt="logo"></div>
+				<ul class="social">
+					<li class="social-item"><a href="http://vk.com/daniilyanenko" target="blank" class="social-item-linkVK">vk.com</a></li><!--
+					--><li class="social-item"><a href="http://twitter.com" target="blank" class="social-item-linkTW">twitter.com</a></li><!--
+					--><li class="social-item"><a href="http://www.facebook.com/daniil.yanenko" target="blank" class="social-item-linkFB">facebook.com</a></li><!--
+					--><li class="social-item"><a href="http://github.com/danyanenko" target="blank" class="social-item-linkGH">github.com</a></li>				
+				</ul>
+			</div>
 		</header>
 				
 	<div class="wrapper">		
@@ -56,14 +58,14 @@
 			<aside class="sidebar">
 				<nav class="navigation">
 					<ul class="navigation-list">
-						<li class="navigation-item" id="highest-item"><a href = "index.html"  class="navigation-item-link">Обо мне </a> </li>
-						<li class="navigation-item-active"><a href = "my-works.html" class="navigation-item-link-active">Мои работы</a> </li>
-						<li class="navigation-item" id="lowest-item"><a href = "feedback.html"  class="navigation-item-link">Связаться со мной</a></li>
+						<li class="navigation-item highest-item"><a href = "index.html"  class="navigation-item-link highest-link">Обо мне </a> </li>
+						<li class="navigation-item-active"><a href = "my-projects.html" class="navigation-item-link-active middle-link">Мои работы</a> </li>
+						<li class="navigation-item lowest-item"><a href = "feedback.html"  class="navigation-item-link lowest-link">Связаться со мной</a></li>
 					</ul>
 				</nav>
 				<address class="contacts">
 					<ul class="contacts-list">
-						<li class="contacts-header">Контакты</li> 
+						<li class="contacts-begin">Контакты</li> 
 						<li class="contacts-item-email"><a href="mailto:yanencko.daniil@yandex.ru" class="email"><span>yanencko.daniil@ya.ru</span></a></li>
 						<li class="contacts-item-phone"><a href="tel:+79313752172" class="phone"><span>+79313752172</span></a></li>
 						<li class="contacts-item-skype"><a href="skype:daniilyanenko" class="skype"><span>daniilyanenko</span></a></li>
@@ -75,33 +77,34 @@
 		<div class="variable-content">
 			<div class="add-proj-block" id="add-proj">
 				<div class="add-proj-header">Добавление проекта<div class="close-button"></div></div>
-				<form action="" class="add-proj-form">
+				<form action="" class="add-proj-form" id="add-proj-form">
 						<div class="form-name">
 							<span class="label">Название проекта</span>
-							<input type="proj-name" class="input-form-proj-name" placeholder="Введите название"/>
+							<input type="proj-name" class="input-form-proj-name" qtip-content="Вы не указали название проекта" qtip-position="left" placeholder="Введите название"/>
 						</div>
 						
 						<div class="form-add-button">
 							<span class="label">Картинка проекта</span>
 							<label class="label-add-button">
 								<div class="filename">Загрузите изображение</div>
-								<input type="file" value="Загрузите изображение" class="add-button">
+								<input type="file" value="Загрузите изображение" qtip-position="left" qtip-content="Вы не добавили изображение для проекта" class="add-button">
 							</label>
 						</div>
 						<div class="form-url">
 							<span class="label">URL проекта</span>
-							<input type="url" class="input-form-url" placeholder="Добавьте ссылку"/>
+							<input type="url" class="input-form-url" qtip-position="left" qtip-content="Вы не указали URL адрес ресурса" placeholder="Добавьте ссылку"/>
 						</div>
 
 						<div class="descr">
 							<span class="label">Описание проекта</span>
-							<textarea class="input-proj-descr"  placeholder="Пара слов о Вашем проекте"></textarea>
+							<textarea class="input-proj-descr"  qtip-position="left"  qtip-content="Напишите, что Вы от меня хотите" placeholder="Пара слов о Вашем проекте"></textarea>
 						</div>
 						
 						
 						<div class="submit-button">
 							<input type="submit" class="input-submit-button" value="Добавить">
 						</div>
+						
 				</form>	
 			</div>		
 		
@@ -158,10 +161,7 @@
 						</li>
 						<li class="project-item">
 							<label class="popup-label">
-								<div class="add-project-button">
-								
-									
-									<input type="button" class="popup-button" id="popup-button" value="Pop it up!"/>
+								<div class="add-project-button"  id="popup-button">
 								</div>
 								<h3 class="upload-proj-header">Загрузить новый проект</h3>
 							</label>
@@ -177,14 +177,26 @@
 	
 </div>
 <footer class="footer">
-					<div class="grad-footer"></div>	
-					<a href="login.html"><div class="lock"></div></a>	
-					<div class="text-footer">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>	
-	</footer>	
+	
+		<a class="lock-block" href="login.html">Login</a>
+		<div class="text-footer">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>	
 		
-	<script src="bower/jquery/dist/jquery.min.js"></script>
+	
+</footer>	
+		
+<!--[if (lt IE 9)]> 
+	<script type="text/javascript" src="bower_components/jquery-legacy/jquery.min.js"></script>
+<![endif]-->	
+<!--[if (!IE)]>-->
+<script type="text/javascript" src="bower_components/jquery-modern/dist/jquery.min.js"></script>
+<!--<![endif]-->
 	<script src="js/text_file_input.js"></script>	
 	<script type="text/javascript" src="bower_components/bPopup/jquery.bpopup.js"></script>
 	<script type="text/javascript" src="js/pop_up.js"></script>
+	<script type="text/javascript" src="bower_components/qTip2/jquery.qtip.min.js"></script>
+	<script type="text/javascript" src="js/validate.js"></script>
+	<script type="text/javascript" src="js/add-proj.js"></script>
+	<script type="text/javascript" src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+    <script type="text/javascript" src="js/placeholder.js"></script>
 </body>
 </html>

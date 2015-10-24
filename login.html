@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru=RU">
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="loftschool_homework">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Авторизация</title>
 
 	<!--  SEO -->
@@ -23,29 +24,30 @@
 
 	<!--     CSS   -->
 
-	<link rel="stylesheet" type="text/css" href="css/login.css">
-	
-	<!--  bower CSS -->
 
-	<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/login.css">
+	<link rel="stylesheet" type="text/css" href="css/social.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/wrapper.css">
+	<!--  bower CSS -->
+	<link rel="stylesheet" type="text/css" href="bower_components/qTip2/jquery.qtip.min.css">	
+	<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
 		
 	<!-- modernizer -->
-	<script src="bower/modernizer/modernizr.js"></script>
-
-	
-	
+	<script src="bower_components/modernizer/modernizr.js"></script>
 </head>
 <body>
 <div class="super-wrapper">
 		<header class="header">
-			<div class="logo"></div>
-			<ul class="social">
-				<li class="social-item"><a href="http://vk.com/daniilyanenko" target="blank" class="social-item-linkVK"></a></li><!--
-				--><li class="social-item"><a href="http://twitter.com" target="blank" class="social-item-linkTW"></a></li><!--
-				--><li class="social-item"><a href="http://www.facebook.com/daniil.yanenko" target="blank" class="social-item-linkFB"></a></li><!--
-				--><li class="social-item"><a href="http://github.com/danyanenko" target="blank" class="social-item-linkGH"></a></li>				
-			</ul>
-			<div class="grad-header"></div>	
+			<div class="header-content">
+				<div class="logo"><img src="img/logo.png"  alt="logo"></div>
+				<ul class="social">
+					<li class="social-item"><a href="http://vk.com/daniilyanenko" target="blank" class="social-item-linkVK">vk.com</a></li><!--
+					--><li class="social-item"><a href="http://twitter.com" target="blank" class="social-item-linkTW">twitter.com</a></li><!--
+					--><li class="social-item"><a href="http://www.facebook.com/daniil.yanenko" target="blank" class="social-item-linkFB">facebook.com</a></li><!--
+					--><li class="social-item"><a href="http://github.com/danyanenko" target="blank" class="social-item-linkGH">github.com</a></li>				
+				</ul>
+			</div>
 		</header>
 
 		<div class="wrapper">
@@ -54,28 +56,36 @@
 				<form action="" class="login-form">
 					<div class="username">
 						<span class="label">Имя пользователя</span>
-						<input type="name" class="input-username" name="username" placeholder="Введите имя пользователя" id="username"/>
+						<input type="name" qtip-position="left" qtip-content="Вы не ввели логин" class="input-username" name="username" placeholder="Введите имя пользователя" id="username"/>
 					</div>
 					<div class="password">
 						<span class="label">Пароль</span>
-						<input type="password" class="input-password"name="password" placeholder="Введите пароль" id="password"/>
+						<input type="password" qtip-position="left" qtip-content="Вы не ввели пароль" class="input-password" name="password" placeholder="Введите пароль" id="password"/>
 					</div>
 					<div class="submit">
 						<input type="submit" class="submit-button" value="Войти" />
 					</div>
 				</form>
 			</div>
-		</div>
-
-			
-	</footer>
+		</div>	
 </div>
-
 	<footer class="footer">
-					<div class="grad-footer"></div>	
-					<a href="login.html"><div class="lock"></div></a>		
-					<div class="text-footer">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>	
+		<a class="lock-block" href="login.html">Login</a>
+		<div class="text-footer">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>		
+	</footer>
 		
-		
+
+<!--[if (lt IE 9)]> 
+	<script type="text/javascript" src="bower_components/jquery-legacy/jquery.min.js"></script>
+<![endif]-->	
+<!--[if (!IE)]>-->
+<script type="text/javascript" src="bower_components/jquery-modern/dist/jquery.min.js"></script>
+<!--<![endif]-->
+<script type="text/javascript" src="bower_components/qTip2/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="js/validate.js"></script>
+<script type="text/javascript" src="js/add-proj.js"></script>
+<script type="text/javascript" src="js/placeholder.js"></script>
+	
 </body>
 </html>
