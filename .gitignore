@@ -1,0 +1,14 @@
+# Игнор-лист файлов проекта
+/app/bower_components/*
+
+/node_modules/*
+
+/dist/*
+
+
+
+.DS_Store
+
+/Fonts/*
+
+/ptrouble/*

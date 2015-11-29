@@ -1,0 +1,53 @@
+.ico-social {
+    background-image: url(../img/social/social.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.ico-fb {
+    width: 47px;
+    height: 47px;
+    background-position: -70px -70px;
+}
+
+.ico-fb:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -257px -70px;
+}
+
+.ico-github {
+    width: 47px;
+    height: 47px;
+    background-position: -70px -257px;
+}
+
+.ico-github:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -257px -257px;
+}
+
+.ico-tw {
+    width: 47px;
+    height: 47px;
+    background-position: -444px -70px;
+}
+
+.ico-tw:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -444px -257px;
+}
+
+.ico-vk {
+    width: 47px;
+    height: 47px;
+    background-position: -70px -444px;
+}
+
+.ico-vk:hover {
+    width: 47px;
+    height: 47px;
+    background-position: -257px -444px;
+}

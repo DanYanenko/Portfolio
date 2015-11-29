@@ -1,0 +1,458 @@
+.my-placeholder{
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+	color: #33ccff!important;	
+}
+
+.variable-content{
+	position:relative;
+	display: inline-block;
+	vertical-align: top;
+	width:650px;
+	//border:solid;
+	margin-left: 60px;
+	z-index: 1;
+	//float: right;
+}
+
+.projects{
+	//display: none;
+	min-height:100%;
+	background-color: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 26px;
+}
+
+
+.projects-header{
+  	word-wrap: break-word;
+    position: relative;
+    font-family: 'fira_sanslight';
+    font-size: 27px;
+    color: #3ba8c0;
+    border-color: #3ba8c0;
+    border-bottom: solid;
+    border-width: 2px;
+    margin-top: 0px;
+    margin-bottom: 27px;
+    padding-left: 22px;
+    line-height: 68px;
+    box-sizing: border-box;
+
+    width: 202px;
+}
+
+
+
+.projects-list{
+	font-size: 0px;	
+	padding:0;
+}
+.project-item{
+	list-style-type: none;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 31px;
+	margin-bottom: 37px;
+}
+
+.project-item:nth-child(3n+1){
+	margin-left: 20px;
+}
+
+.project-item-detail{
+	font-family: 'fira_sansbook';
+	font-size: 13px;
+	width:182px;
+	height: auto;
+	//overflow: hidden;
+}
+
+.proj-img{
+	/*left: 50%;
+    margin-Left: -10px;*/
+	position: relative;
+    height: 127px;
+    width: 182px;
+    border: 1px solid #3ba8c0;
+	border-radius: 3px;
+	z-index: 1;
+
+ }
+
+.hidden_backgr{
+
+  position: absolute;
+  height: 127px;
+  width: 181px;
+  z-index: 91;
+cursor: pointer;
+}
+.hidden_backgr:hover{
+ cursor: pointer;
+  position: absolute;
+  border-radius: 3px;
+  border-width: 2px;
+  border-color: rgb(59, 168, 192);
+  border-style: solid;
+  background-color: rgba(1, 108, 164, 0.749);
+}
+
+.no-rgba .hidden_backgr:hover{
+	background-color:rgb(1, 108, 164);
+}
+
+ .hidden_backgr:hover .popup-link {
+	
+	visibility: visible;
+}
+
+.popup-link{
+  visibility: hidden;
+  display:block;
+  border-width: 2.5px;
+  border-color: rgb(239, 243, 247);
+  border-style: solid;
+  border-radius: 4px;
+  position: relative;
+  left: 50%;
+  top: 50%;
+  margin-left: -47px;
+  margin-top: -9px;
+  width: 94px;
+  height: 18px;
+  z-index: 92;
+
+
+}
+
+
+
+.popup-link a {
+	color:#ffffff;
+	font-family: 'fira_sansbook';
+	font-size: 12px;
+	text-decoration: none;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	
+}
+
+
+
+.project-link{
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	word-wrap:break-word;
+	font-style: 13px;
+	font-family: 'fira_sanslight_italic';
+	color: #3399cc;
+	text-decoration: none;
+
+}
+
+.proj-header{
+	font-size: 15px;
+	margin: 0;
+	text-align: center;
+	font-family: 'fira_sanslight';
+	color: #336666;
+}
+
+/*  Блок добавления проекта */ 
+.add-project-button{
+  border: 1px dashed rgb(59, 168, 192);
+  border-radius: 3px;
+  background-color: rgba(236, 251, 255, 0.639);
+  width: 182px;
+  height: 127px;
+  z-index: 105;
+  position: relative;	
+}
+
+.add-project-button:hover{
+	opacity: 0.8;
+}
+
+ .upload-proj-header{
+ 	//background: url("../img/add-proj.png") no-repeat center 0;
+    width: 110px;
+    height: 16px;
+    visibility: visible;
+    font-family: 'fira_sansultralight';
+    font-size: 13px;
+    color: #3399cc;
+    margin: 0;
+    text-align: center;
+    padding-top: 40px;
+    position: absolute;
+    
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+	
+	overflow: hidden;
+	white-space: nowrap;
+	tetx-overflow: ellipsis;
+
+ }
+.popup-label{
+	cursor: pointer;
+}
+
+	
+.add-proj-block{
+	display: none;
+	position:absolute;
+	width:362px;
+	z-index: 20;
+	box-sizing:border-box;
+	margin-bottom: 26px;
+
+	
+	
+	border-radius: 5px;
+	background-color: rgb(239, 243, 247);
+	box-shadow: 0px 6px 12.48px 0.52px rgba(13, 16, 7, 0.137);
+}
+
+.add-proj-header{
+	box-sizing:border-box;
+	position: relative;
+	font-family: 'fira_sanslight';
+	font-size: 25px;
+	background-color: rgb(72, 203, 232);
+	color:#ffffff; 
+	border-radius: 4px 4px 0 0;
+	margin-top: 0px;
+	margin-bottom:5px;
+	width:100%;
+	padding-left:13px;
+	line-height: 47px;
+
+}
+
+.close-button{
+	position: absolute;
+	right:0px;
+	top:3px;
+	//background-image: url("../img/close-button.png");
+	z-index: 30;
+	cursor:pointer;
+
+	
+}
+.add-proj-header:after{
+	height: 9px; 
+	width: 362px;
+	background-color: rgb(103, 223, 250);
+	content: "";
+	display: block;
+	margin-left: -13px;
+}
+
+.add-proj-form{
+	width: 320px;
+	margin:0 auto;
+}
+
+.add-proj-form .label{
+	font-size: 17px;
+	display: block;
+	font-family: 'fira_sanslight';
+	color:#999999;
+
+}
+
+input[class*="input-form"]::-webkit-input-placeholder,
+.input-proj-descr::-webkit-input-placeholder{
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+	color: #33ccff!important;
+}
+
+input[class*="input-form"]::-moz-placeholder
+.input-proj-descr::-moz-placeholder{
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+	color: #33ccff!important;
+}
+input[class*="input-form"]:-ms-input-placeholder,
+.input-proj-descr:-ms-input-placeholder{
+	font-size: 13px;
+	font-family: 'fira_sanslight';
+	color: #33ccff!important;
+}
+
+
+
+
+.form-name, .form-url, .form-add-button{
+	margin-bottom: 6px;
+}
+
+.form-url{
+	//float: right;
+	//margin-left: 13px;
+}
+
+.input-form-url{
+	font-family: 'fira_sanslight_italic';
+}
+
+.input-form-proj-name, .input-form-url, .input-proj-descr{
+	  border-width: 1px;
+	  border-color: rgb(72, 203, 232);
+	  border-style: solid;
+	  border-radius: 4px;
+	  background-color: rgb(251, 252, 253);
+	  position: relative;
+	  font-size: 13px;
+	  z-index: 129;
+	  color:#5c656f;
+	  outline: none;
+	  padding-left: 10px;
+	  box-sizing:border-box;
+	  
+	  
+}
+
+.input-proj-descr{
+	position: relative;	
+	padding-top: 8px\0/;
+	padding-top: 8px;
+	width: 100%;
+	max-width: 320px;
+	min-height: 112px;
+}
+.input-form-proj-name, .input-form-url{
+	padding-top:10px\0/;
+	width: 100%;
+	height: 42px;
+}	
+
+.has-error{	
+  border-width: 1px!important;
+  border-color: rgb(249, 126, 118)!important;
+  border-style: solid!important;
+  border-radius: 4px!important;
+  background-color: rgba(249, 126, 118, 0.302)!important;
+}
+
+
+.filename_loaded{
+	color:#5c656f!important;
+}
+
+.filename{
+	position: relative;
+	color: #33ccff;
+	
+	
+	font-size:13px;
+	border-width: 1px;
+	border-color: rgb(72, 203, 232);
+	border-style: solid;
+	border-radius: 4px;
+	line-height: 40px;		
+	width: 100%;
+	height: 42px;
+	background-color: rgb(251, 252, 253);
+	cursor: pointer;
+	padding-left: 10px;
+	box-sizing:border-box;
+	padding-right: 48px;
+
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow:ellipsis;
+
+}
+
+
+.filename:after{
+	background-image: url(../../img/misc/misc.png);
+    background-repeat: no-repeat;
+	width: 52px;
+    height: 45px;
+    background-position: -430px -69px;
+    display: block;
+    position: absolute;
+    content: "";
+    right: -2px;
+    top: -2px;
+}
+
+.add-file-button{
+	 margin-left:-9999px;
+	 position: absolute;
+
+}
+
+
+
+
+
+ .submit-button{
+	
+	width:140px;
+	margin:16px auto 22px;
+}
+
+
+
+.input-submit-button{
+	position: relative;
+    border-radius: 5px;
+     width: 140px;
+  	height: 31px;
+    color: #ffffff;
+    background-color: #67dffa;
+    border: 1px solid #67dffa;
+    border-bottom: 2px solid #3ba8c0;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+    outline: none
+
+
+}
+
+.input-submit-button:hover{
+  border-radius: 5px;
+  background-color: rgb(72, 203, 232);
+  position: relative;
+  border:none;
+  width: 140px;
+  height: 31px;
+  z-index: 66;
+}
+
+.input-submit-button:active{
+	
+    border-radius: 5px;
+    width: 140px;
+    height: 31px;
+    color: #ffffff;
+    background-color: #67dffa;
+    border: 1px solid #67dffa;
+    border-top: 2px solid #3ba8c0;
+    font-family: 'fira_sansbook';
+    font-size: 19px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

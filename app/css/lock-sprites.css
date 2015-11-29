@@ -1,0 +1,17 @@
+.ico-lock {
+    background-image: url(../img/lock/lock.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.ico-login:hover{
+    width: 20px;
+    height: 32px;
+    background-position: -70px -70px;
+}
+
+.ico-login {
+    width: 20px;
+    height: 32px;
+    background-position: -230px -70px;
+}

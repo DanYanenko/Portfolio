@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru=RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="loftschool_homework">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Авторизация</title>
+
+	<!--  SEO -->
+	<meta name = "description" content="loftschool_homework">
+	<meta name="keywords" content="loftschool_homework">
+	<meta name="author" content="Daniil Ianenko">
+
+	<!-- favicon.ico -->
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+
+
+	<!--      FONtS    -->
+
+	<link rel="stylesheet"  href="Fonts/fira.css">
+	<link rel="stylesheet"  href="Fonts/proximanovacond-semibold.css">
+
+	<!--     CSS   -->
+	<link rel="stylesheet" type="text/css" href="css/pages/login.css">
+	<!-- build:css css/combined_common.css  -->
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/wrapper.css">
+	<!--endbuild  -->
+
+	<!--build:css css/vendor.css -->
+	<!--  bower CSS -->
+	<link rel="stylesheet" type="text/css" href="bower_components/qTip2/jquery.qtip.min.css">	
+	<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
+	<!--endbuild  -->
+
+	<!--build:js js/modernizr.js -->
+	<!-- modernizer -->
+	<script src="bower_components/modernizer/modernizr.js"></script>
+	<!--endbuild-->
+</head>
+<body>
+	<div class="super-wrapper">
+		<div class="content">
+			<div class="login">
+				<h2 class="login-header">Авторизуйтесь</h2>
+				<form action="" method="post" class="login-form">
+					<div class="username">
+						<span class="label">Логин</span>
+						<input type="name" qtip-position="left" qtip-content="Вы не ввели логин" class="input-username" name="username" placeholder="Введите имя пользователя" id="username"/>
+					</div>
+					<div class="password">
+						<span class="label">Пароль</span>
+						<input type="password" qtip-position="left" qtip-content="Вы не ввели пароль" class="input-password" name="password" placeholder="Введите пароль" id="password"/>
+					</div>
+					<div class="submit">
+						<input type="submit" class="submit-button" value="Войти" />
+					</div>
+				</form>
+			</div>
+		</div>		
+	</div>
+
+	<footer class="footer">	
+		<div class="text-footer">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>		
+	</footer>	
+	
+		
+<!--build:js js/jquery-legacy.js -->
+
+<!--[if (lt IE 9)]> 
+
+	<script type="text/javascript" src="bower_components/jquery-legacy/jquery.min.js"></script>
+
+<![endif]-->	
+
+<!-- endbuild -->	
+
+
+<!--[if !IE]>-->
+<!--build:js js/jquery-modern.js -->
+<script type="text/javascript" src="bower_components/jquery-modern/dist/jquery.min.js"></script>
+<!-- endbuild -->
+<!--<![endif]-->
+
+<!--build:js js/vendor.js -->
+<script type="text/javascript" src="bower_components/qTip2/jquery.qtip.min.js"></script>
+<script type="text/javascript" src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+
+<!-- endbuild -->
+
+<!-- build:js js/combined.js -->
+<script type="text/javascript" src="js/validate.js"></script>
+<script type="text/javascript" src="js/add-proj.js"></script>
+<script type="text/javascript" src="js/placeholder.js"></script>
+<!-- endbuild -->
+</body>
+</html>

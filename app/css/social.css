@@ -1,0 +1,34 @@
+.social{
+	position: relative;
+	//display:inline-block;
+	//width:260px;
+	height: 47px;
+	
+	top:35px;
+	float:right;
+	margin: 0;
+	padding: 0;
+	//border:solid;
+}
+
+.social-item{
+	display: inline-block;
+	vertical-align: top;
+	margin-left:0;
+	margin-right:24px;
+	width:47px;
+	height: 47px;
+	//border:solid;
+}
+
+.social-item:last-child{
+	margin-right: 0;
+}
+
+.social-item-linkVK, .social-item-linkTW, .social-item-linkFB, .social-item-linkGH{
+	position: relative;
+	text-indent: -9999px;
+	height: 100%;
+	width: 100%;
+	display: block;
+}

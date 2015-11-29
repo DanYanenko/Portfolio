@@ -1,0 +1,29 @@
+{
+  "name": "Portfolio",
+  "homepage": "https://github.com/danyanenko/Homework",
+  "description": "First homework",
+  "main": "index.html",
+  "moduleType": [],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bPopup": "bpopup#~0.11.0",
+    "jquery-placeholder": "~2.1.3",
+    "qTip2": "~2.2.1",
+    "jquery": "~2.1.4",
+    "jquery-legacy": "jquery#1.9",
+    "jquery-modern": "jquery#2",
+    "modernizer": "~2.8.2",
+    "normalize-css": "normalize.css#~3.0.3"
+  },
+  "resolutions": {
+    "jquery": "~2.1.4"
+  }
+}

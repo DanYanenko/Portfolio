@@ -1,0 +1,333 @@
+
+.variable-content{
+	position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 650px;
+    margin-left: 60px;
+    z-index: 1;
+}
+
+.aboutbox{
+	background-color: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 25px;
+}
+
+.clearfix:before, .clearfix:after{
+	display:table;
+	content: "";
+}
+
+.clearfix:after{
+	clear: both;
+}
+.variable-content [class*="header"]{
+	    word-wrap: break-word;
+    position: relative;
+    font-family: 'fira_sanslight';
+    font-size: 27px;
+    color: #3ba8c0;
+    border-color: #3ba8c0;
+    border-bottom: solid;
+    border-width: 2px;
+    margin-top: 0px;
+    margin-bottom: 22px;
+    padding-left: 22px;
+    line-height: 68px;
+    box-sizing: border-box;
+
+}
+.aboutbox-header{
+	width:341px;
+}
+.aboutbox-body{
+    float: left;
+    position: relative;
+    width: 160px;
+    margin-left: 54px;
+    margin-top: 12px;
+}
+
+.image-wrap{
+	//float:left;
+}
+
+.avatar-wrap{
+	position: relative;
+    float: left;
+    width: 142px;
+    height: 142px;
+    border-radius: 50% 50%;
+    overflow: hidden;
+    border: 5px solid #3ba8c0;
+    z-index: 2;
+}
+.avatar{
+	z-index: 1;
+	width:100%;
+}
+
+
+.worksheet-wrap{
+    position: relative;
+    float: left;
+    margin-left: 15px;
+    margin-bottom: 47px;
+}
+
+.worksheet-list{    
+    list-style-type: none;
+    padding-left: 0px;
+}
+.worksheet-item{
+    margin-top: 14px;
+    width: 400px;
+}
+.worksheet-item:first-child{
+	margin-top: 0;
+}
+.worksheet-what{
+	font-family: 'fira_sansmedium';
+    font-size: 17px;
+    line-height: 20px;
+    color: #4a545d;
+    float: left;
+    word-break:break-word;
+}
+
+.worksheet-what.name{
+	width:96px;
+}
+.worksheet-what.age{
+	width:106px;
+}
+
+.worksheet-what.city{
+	width:89px;
+}
+
+.worksheet-what.prof{
+	width:166px;
+}
+.worksheet-what.skills{
+	width:154px;
+}
+
+.worksheet-about{
+    text-align: justify;
+    font-family: 'fira_sansbook';
+    font-size: 15px;
+    line-height: 18px;
+    color: #5c656f;
+    float: left;
+    margin-left: 20px;
+    width: 214px;
+	
+}
+
+.worksheet-info-skills{
+
+	position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 47px;
+    vertical-align: top;
+    margin-left: 20px;
+
+}
+
+.worksheet-skills-list{
+	list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+/*	//position: relative;
+	border:solid;
+	width:192px;
+	height:47px;
+
+}*/
+
+.skills-list{
+	list-style-type: none;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.skill-item{
+	
+	display: inline-block;
+	margin-right:8px;
+	margin-bottom: 9px;
+	color: #ffffff;
+	//display:inline-block;
+
+}
+
+.skill-item:first-child{
+	margin-left: 0;
+}
+.figure-html, .figure-css, .figure-javascript, .figure-gulp, .figure-git{
+  border-radius: 2px;
+  background-image: -moz-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(46,140,162) 0%, rgb(46,140,162) 52%, rgb(59,168,192) 53%, rgb(59,168,192) 100%);
+  position: relative;
+  text-align: center;
+  font-family: 'proxima_nova_condensedSBd';
+  font-size: 14px;
+  display: inline-block;	
+  min-height: 19px;
+
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow:ellipsis;
+}
+
+.no-cssgradients .figure-html, .no-cssgradients .figure-css, .no-cssgradients .figure-javascript, .no-cssgradients .figure-gulp,  .no-cssgradients .figure-git{
+	background: url('../../img/fallback/skillbox.png') 100% no-repeat;
+}
+
+.figure-html{
+  width: 52px;
+}
+.figure-css {
+  width: 46px;
+}
+
+
+.figure-javascript {
+  width: 78px;
+ }
+
+.figure-gulp {
+  width: 52px;
+ 
+}
+
+.figure-git{
+  width: 41px;
+}
+
+
+.work-exp{
+	position: relative;
+	background-color: #eff3f7;
+	border-radius: 4px;
+	margin-bottom: 25px;
+}
+
+
+
+.work-header{
+	width:209px;
+}
+
+.work-exp-list{
+	list-style-type: none;
+	padding-left: 0px; 
+	margin:0px;
+	margin-bottom: 15px;
+}
+
+.work-exp-item:first-child{
+	margin-top:0;
+}
+
+.work-exp-item{
+	position: relative;
+	font-family: 'Fira_sansbook';
+	font-size: 17px;
+	padding-left: 124px;
+	//background: url('../../img/bag.png') no-repeat 58px center;
+	color: #4a545d;
+	margin-top: 8px;
+}
+
+.work-exp-item:before{
+	background-image: url(../../img/misc/misc.png);
+	background-repeat: no-repeat;
+	background-position: -242px -70px;
+    position: absolute;
+    width: 36px;
+    height: 34px;
+    top: 50%;
+    margin-top: -17px;
+    left: 58px;
+    content: "";
+}
+
+.work-exp-title{
+	width:500px;
+}
+
+.work-exp-details{
+	font-family: 'Fira_sanslight';
+	font-size: 15px;
+	color: #4a545d;
+}
+
+.education{
+	position: relative;
+	background-color: #eff3f7;
+	border-radius: 4px;
+}
+
+.education-header{
+	width:215px;
+}
+
+.education-list{
+	list-style-type: none;
+	padding-left: 0px; 
+	margin:0px;
+	margin-bottom: 15px;
+}
+
+.education-item{
+	position: relative;
+	font-family: 'Fira_sansbook';
+	font-size: 17px;
+	padding-left: 124px;
+	//background: url('../../img/cap.png') no-repeat 58px center;
+	color: #4a545d;
+	margin-bottom: 31px;
+}
+
+.education-item:before{
+	background-image: url(../../img/misc/misc.png);
+	background-repeat: no-repeat;
+    position: absolute;
+    width: 42px;
+    height: 23px;
+    background-position: -70px -244px;
+    top: 50%;
+    margin-top: -12px;
+    left: 55px;
+    content: "";
+}
+
+.education-item.optional:before{
+	
+	//background: url('../../img/list.png') no-repeat 67px center;
+	 width: 26px;
+    height: 32px;
+    background-position: -430px -251px;
+ 	margin-top: -16px;
+	left: 63px;
+
+	margin-bottom: 0;
+}
+
+.education-details{
+	font-family: 'Fira_sanslight';
+	font-size: 15px;
+	color: #4a545d;
+}
+
+
+
+
+
+

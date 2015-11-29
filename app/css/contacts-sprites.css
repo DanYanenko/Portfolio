@@ -1,0 +1,17 @@
+.ico-contacts {
+    background-image: url(../img/contacts/contacts.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.ico-email {
+    background-position: -46px -70px;
+}
+
+.ico-skype {
+    background-position: -46px -248px;
+}
+
+.ico-tel {
+    background-position: -46px -426px;
+}

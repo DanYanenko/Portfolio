@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ru=RU">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="loftschool_homework">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Напишите мне</title>
+
+	<!--  SEO -->
+	<meta name = "description" content="loftschool_homework">
+	<meta name="keywords" content="loftschool_homework">
+	<meta name="author" content="Daniil Ianenko">
+
+	<!-- favicon.ico -->
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/icons/favicon.ico">
+	<link rel="icon" type="image/x-icon" href="img/icons/favicon.ico">
+
+
+	<!--      FONtS    -->
+
+	<link rel="stylesheet"  href="Fonts/fira.css">
+	<link rel="stylesheet"  href="Fonts/proximanovacond-semibold.css">
+
+	<!--   CSS   -->
+	<link rel="stylesheet" type="text/css" href="css/pages/feedback.css">
+	<!-- build:css css/combined_common.css  -->	
+	<link rel="stylesheet" type="text/css" href="css/social.css">
+	<link rel="stylesheet" type="text/css" href="css/header-footer.css">
+	<link rel="stylesheet" type="text/css" href="css/wrapper.css">
+	<link rel="stylesheet" type="text/css" href="css/fixed-content.css">
+	<link rel="stylesheet" type="text/css" href="css/social-sprites.css">
+	<link rel="stylesheet" type="text/css" href="css/contacts-sprites.css">
+	<link rel="stylesheet" type="text/css" href="css/lock-sprites.css">
+	<link rel="stylesheet" type="text/css" href="css/misc-sprites.css">
+	<!--endbuild  -->
+
+	<!--build:css css/vendor.css -->
+	<!--  bower CSS -->
+	<link rel="stylesheet" type="text/css" href="bower_components/qTip2/jquery.qtip.min.css">
+	<link rel="stylesheet" type="text/css" href="bower_components/normalize-css/normalize.css">
+	<!--endbuild  -->
+
+	<!-- modernizer -->
+	<!--build:js js/modernizr.js -->
+	<script src="bower_components/modernizer/modernizr.js"></script>
+	<!--endbuild-->
+	
+	
+	
+</head>
+<body>
+	<div class="super-wrapper">
+			<header class="header">
+				<div class="header-content">
+					<div class="logo">
+						<a href="index.html" class="logo__link">
+							<img src="img/content/logo.png"  alt="logo">
+						</a>
+						<span class="logo__text">Яненко Даниил</span>
+					</div>
+					<ul class="social">
+						<li class="social-item"><a href="http://vk.com/daniilyanenko" target="blank" class="social-item-linkVK ico-social ico-vk">vk.com</a></li><!--
+						--><li class="social-item"><a href="http://twitter.com" target="blank" class="social-item-linkTW ico-social ico-tw">twitter.com</a></li><!--
+						--><li class="social-item"><a href="http://www.facebook.com/daniil.yanenko" target="blank" class="social-item-linkFB ico-social ico-fb">facebook.com</a></li><!--
+						--><li class="social-item"><a href="http://github.com/danyanenko" target="blank" class="social-item-linkGH ico-social ico-github">github.com</a></li>				
+					</ul>
+				</div>
+			</header>
+					
+		<div class="wrapper">		
+			<div class="fixed-content">
+
+
+				<aside class="sidebar">
+					<nav class="navigation">
+						<ul class="navigation-list">
+							<li class="navigation-item highest-item" ><a href = "index.html"  class="navigation-item-link highest-link">Обо мне </a> </li>
+							<li class="navigation-item"><a href = "my-projects.html" class="navigation-item-link middle-link">Мои работы</a> </li>
+							<li class="navigation-item-active lowest-item" ><a href = "feedback.html" class="navigation-item-link-active lowest-link">Связаться со мной</a></li>
+						</ul>
+					</nav>
+					<address class="contacts">
+						<ul class="contacts-list">
+							<li class="contacts-begin">Контакты</li> 
+							<li class="contacts-item-email ico-contacts ico-email "><a href="mailto:yanencko.daniil@yandex.ru" class="email"><span class="contact-item-detail">yanencko.daniil@ya.ru</span></a></li>
+							<li class="contacts-item-phone ico-contacts ico-tel"><a href="tel:+79313752172" class="phone"><span class="contact-item-detail">+79313752172</span></a></li>
+							<li class="contacts-item-skype ico-contacts ico-skype"><a href="skype:daniilyanenko" class="skype"><span class="contact-item-detail">daniilyanenko</span></a></li>
+						</ul>
+					</address>	
+				</aside>
+			</div>
+
+			<div class="variable-content">
+				
+				<div class="feedback-block">
+
+					<h2 class="feedback-header">У Вас интересный проект? Напишите мне</h2>
+					<form action="" class="feedback-form">
+							<div class="form-name">
+								<div class="label-short">Имя</div>
+								<input type="name" qtip-position="left"  qtip-content="Вы не ввели Ваше имя" class="input-form-name" placeholder="Введите Ваше имя"/>
+							</div>
+
+							<div class="form-email">
+								<div class="label-short">Email</div>
+								<input type="email" qtip-position="right"  qtip-content="Вы не указали email" class="input-form-email" placeholder="Куда мне писать"/>
+							</div>
+
+							<div class="descr">
+								<span class="label">Сообщение</span>
+								<textarea class="input-proj-descr"  qtip-position="left"  qtip-content="Добавьте, пожалуйста, краткое описание" placeholder="Кратко, в чем суть"></textarea>
+							</div>
+							
+							<div class="captcha">
+								<span class="label">Введите код, указанный на картинке</span>
+								<img src="img/content/captcha.png" height="68" width="177" alt="captcha" class="img-captcha">
+								<input type="text" class="input-form-captcha" qtip-position="right"  qtip-content="Вы не ввели код"placeholder="Введите код" />
+							</div>
+
+							<div class="submit-button">
+								<input type="submit" class="input-submit-button" value="Отправить">
+							</div><div class="reset-button">
+								<input type="reset" class="input-reset-button" value="Очистить"/>
+							</div>
+					</form>	
+					
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="footer">
+			<a class="lock-block  ico-lock ico-login" href="login.html">Login</a>
+			<div class="text-footer">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его</div>	
+	</footer>
+
+	<!--build:js js/jquery-legacy.js -->
+
+	<!--[if (lt IE 9)]> 
+
+		<script type="text/javascript" src="bower_components/jquery-legacy/jquery.min.js"></script>
+
+	<![endif]-->	
+
+	<!-- endbuild -->
+	
+	
+
+	<!--[if !IE]>-->
+	<!--build:js js/jquery-modern.js -->
+	<script type="text/javascript" src="bower_components/jquery-modern/dist/jquery.min.js"></script>
+	<!-- endbuild -->
+	<!--<![endif]-->
+	
+	<!--build:js js/vendor.js -->
+	<script type="text/javascript" src="bower_components/qTip2/jquery.qtip.min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<!--endbuild-->
+
+	<!--build:js js/combined.js-->
+	<script type="text/javascript" src="js/validate.js"></script>
+	<script type="text/javascript" src="js/add-proj.js"></script>	
+	<script type="text/javascript" src="js/placeholder.js"></script>
+	<!--endbuild-->		
+</body>
+</html>
